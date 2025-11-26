@@ -1,0 +1,36 @@
+.contacts {
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+  gap: 24px;
+
+  @include on-tablet {
+    margin-top: 80px;
+  }
+
+  @include on-desktop {
+    margin-top: 0;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__title {
+    margin: 0;
+    color: #9393a3;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #191919;
+    font-style: 16px;
+  }
+
+  &__adress {
+    color: #191919;
+    font-style: 16px;
+  }
+}

@@ -1,0 +1,20 @@
+.promo {
+  height: 200px;
+  width: 100%;
+  position: relative;
+  left: 0;
+  right: 0;
+
+  @include on-tablet {
+    height: 400px;
+  }
+
+  @include on-desktop {
+    height: 460px;
+  }
+
+  background-image: url(../image/bunner.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

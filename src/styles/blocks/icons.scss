@@ -1,0 +1,42 @@
+.icon {
+  display: block;
+  height: 24px;
+  width: 24px;
+  background-size: cover;
+  background-position: center;
+
+  @include hover(transform, scale(1.2));
+
+  @include on-tablet {
+    height: 32px;
+    width: 32px;
+  }
+
+  &--phone {
+    background-image: url(../image/icon-phone-call.png);
+
+    &-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      &:hover .icon--phone-number {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  }
+
+  &--burger-menu {
+    background-image: url(../image/icon-burger-menu.png);
+
+    &:hover {
+      transform: scale(1.2);
+      background-image: url(../image/icon-burger-menu-hover.png);
+    }
+  }
+
+  &--close {
+    background-image: url(../image/icon-close.png);
+  }
+}

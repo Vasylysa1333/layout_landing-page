@@ -1,0 +1,35 @@
+.input {
+  box-sizing: border-box;
+  height: 48px;
+
+  width: 100%;
+  background-color: #f8f8fa;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 14px 16px;
+  color: #292929;
+
+  transition: all $effectDuration;
+
+  &::placeholder {
+    color: #7e7e83;
+  }
+
+  &:hover {
+    border-color: #d5d7de;
+
+    &::placeholder {
+      color: #292929;
+    }
+  }
+
+  &:focus {
+    border-color: #292929;
+    color: #292929;
+  }
+
+  &--message {
+    height: 148px;
+    resize: none;
+  }
+}
