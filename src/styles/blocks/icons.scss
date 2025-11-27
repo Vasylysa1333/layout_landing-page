@@ -15,6 +15,12 @@
   &--phone {
     background-image: url(../image/icon-phone-call.png);
 
+    &-number {
+      opacity: 0;
+      transform: translateX(-10px);
+      transition: all $effectDuration;
+    }
+
     &-wrapper {
       display: flex;
       align-items: center;

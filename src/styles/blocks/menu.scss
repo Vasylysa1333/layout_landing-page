@@ -44,3 +44,7 @@
     width: fit-content;
   }
 }
+
+.page:has(.page__menu:target) {
+  overflow: hidden;
+}

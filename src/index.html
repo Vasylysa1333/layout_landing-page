@@ -9,6 +9,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <link
+      rel="icon"
+      href="./image/logo.ico"
+    />
     <title>Nothing</title>
     <link
       rel="stylesheet"
@@ -63,7 +67,7 @@
               <div class="icon--phone-wrapper">
                 <span class="icon--phone-number">+1 234 555-55-55</span>
                 <a
-                  href="#"
+                  href="tel:+1 234 555-55-55"
                   class="icon icon--phone"
                 ></a>
               </div>
@@ -350,17 +354,19 @@
             <h2 class="section-title">Contact us</h2>
 
             <div class="contact-us__content">
-              <div class="contact-us__form">
+              <form class="contact-us__form">
                 <div class="contact-us__inputs">
                   <input
                     type="text"
                     placeholder="Name"
                     class="input input--name"
+                    required
                   />
                   <input
                     type="text"
                     placeholder="Email"
                     class="input input--email"
+                    required
                   />
                   <textarea
                     name="Message"
@@ -369,8 +375,14 @@
                     placeholder="Message"
                   ></textarea>
                 </div>
-                <button class="button contact-us__button">Send</button>
-              </div>
+
+                <button
+                  class="button contact-us__button"
+                  type="submit"
+                >
+                  Send
+                </button>
+              </form>
 
               <div class="contact-us__contacts contacts">
                 <div class="contacts__item">
@@ -386,7 +398,7 @@
                 <div class="contacts__item">
                   <p class="contacts__title">Email</p>
                   <a
-                    href="email"
+                    href="mailto:hello@nothing.com"
                     class="contacts__link"
                   >
                     hello@nothing.com
@@ -395,13 +407,20 @@
 
                 <div class="contacts__item">
                   <p class="contacts__title">Address</p>
-                  <address class="contacts__address">
-                    400 first ave.
-                    <br />
-                    suite 700
-                    <br />
-                    Minneapolis, MN 55401
-                  </address>
+
+                  <a
+                    href="https://maps.app.goo.gl/yAn9y65fgLPXphAs6"
+                    target="_blank"
+                    class="contacts__link"
+                  >
+                    <address>
+                      400 first ave.
+                      <br />
+                      suite 700
+                      <br />
+                      Minneapolis, MN 55401
+                    </address>
+                  </a>
                 </div>
               </div>
             </div>
